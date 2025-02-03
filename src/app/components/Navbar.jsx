@@ -48,8 +48,8 @@ export default function Navbar() {
                   alt="Project Logo"
                 ></img> */}
                 <h2 className="text-2xl font-bold text-cyan-600 ml-4 md:ml-0">
-                  WARMTH <span className="text-black">&</span>{" "}
-                  <span className="text-sky-400">CARE</span>
+                  Intro <span className="text-black">To</span>{" "}
+                  <span className="text-sky-400">NextJS</span>
                 </h2>
               </div>
               <div className="">
