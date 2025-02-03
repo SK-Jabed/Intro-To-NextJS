@@ -36,7 +36,7 @@ export default function Navbar() {
 
                 <ul
                   tabIndex="0"
-                  className="menu menu-sm dropdown-content bg-cyan-500 rounded-box z-[1] mt-3 w-52 p-4 shadow absolute left-0"
+                  className="menu menu-sm dropdown-content bg-gray-100 rounded-box z-[1] mt-3 w-52 p-4 shadow absolute left-0"
                 >
                   {navLinks}
                 </ul>
