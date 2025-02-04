@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 
 const page = () => {
-    return (
-        <div>
-            About Page is here
-            <li>
+  return (
+    <div>
+      About Page is here
+      <li>
         <Link
           href={"/about/mission"}
           className="text-lg font-medium text-gray-800 hover:text-bg-cyan-400"
@@ -20,8 +20,8 @@ const page = () => {
           Services
         </Link>
       </li>
-        </div>
-    );
+    </div>
+  );
 };
 
 export default page;
