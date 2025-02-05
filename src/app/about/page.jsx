@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const page = () => {
@@ -14,7 +15,7 @@ const page = () => {
       </li>
       <li>
         <Link
-          href={"/about/services"}
+          href={"/about/vision"}
           className="text-lg font-medium text-gray-800 hover:text-bg-cyan-400"
         >
           Services
