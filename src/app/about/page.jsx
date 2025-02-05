@@ -5,6 +5,7 @@ const page = () => {
   return (
     <div>
       About Page is here
+      <div></div>
       <li>
         <Link
           href={"/about/mission"}
