@@ -6,7 +6,8 @@ const page = () => {
     <div>
       About Page is here
       <div>
-        <li>
+        <ul className="flex justify-between">
+<li>
           <Link
             href={"/about/mission"}
             className="text-lg font-medium text-gray-800 hover:text-bg-cyan-400"
@@ -19,9 +20,11 @@ const page = () => {
             href={"/about/vision"}
             className="text-lg font-medium text-gray-800 hover:text-bg-cyan-400"
           >
-            Services
+            Vision
           </Link>
         </li>
+        </ul>
+        
       </div>
     </div>
   );
