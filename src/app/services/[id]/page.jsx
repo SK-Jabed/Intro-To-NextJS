@@ -73,11 +73,42 @@ export default function ServiceDetailsPage({ params }) {
   const id = params.id;
 
   const singleData = services.find((service) => service._id == id);
+  
   return (
-    <div>
-      <h2>ServiceDetailsPage</h2>
-      <p>Service id: {id}</p>
-      <p>{singleData.service_name}</p>
+    <div className="p-4 py-16 flex items-center gap-6">
+      <div className="w-1/2">
+        <img
+          src={singleData.service_image}
+          alt={singleData.service_name}
+          className="w-full h-[400px] object-cover rounded-md"
+        />
+      </div>
+      <div className="w-1/2 h-[400px] px-4 py-8 border-2 rounded-md bg-gray-100">
+        <h1 className="text-3xl font-bold mt-4">
+          {singleData.service_name}
+        </h1>
+        <p className="text-sm text-gray-500 font-semibold mt-3">
+          {singleData.service_description}
+        </p>
+        
+        <p className="mt-[3px] text-gray-600 font-medium">
+          Availability: {singleData.availability}
+        </p>
+        <p className="mt-[3px] text-gray-600 font-medium">
+          Category: {singleData.category}
+        </p>
+        <p className="mt-4 text-gray-600 font-medium">
+          Price Range: {singleData.price_range}
+        </p>
+        <p className="mt-4 text-gray-600 font-medium">
+          Rating: {singleData.rating}
+        </p>
+        <button
+          className="btn mt-5 px-6 py-2 text-lg font-semibold text-white capitalize transition-transform transform bg-gradient-to-r from-indigo-500 via-blue-500 to-blue-600 rounded-md shadow-lg lg:w-auto hover:scale-105 focus:outline-none"
+        >
+          Buy This
+        </button>
+      </div>
     </div>
   );
 }
