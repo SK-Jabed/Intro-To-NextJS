@@ -11,31 +11,30 @@ const page = () => {
   const handleNavigate = () => {
     if (isLoggedIn) {
       router.push("/about/vision");
-    }
-    else {
+    } else {
       router.push("/");
     }
-  }
+  };
 
   return (
     <div>
       About Page is here
       <div className="flex justify-between">
-          <p>
-            <Link
-              href={"/about/mission"}
-              className="text-lg font-medium text-gray-800 hover:text-bg-cyan-400"
-            >
-              Mission
-            </Link>
-          </p>
-            <button
-              type="button"
-              onClick={handleNavigate}
-              className="text-lg font-medium text-gray-800 hover:text-bg-cyan-400"
-            >
-              Vision
-            </button>
+        <p>
+          <Link
+            href={"/about/mission"}
+            className="text-lg font-medium text-gray-800 hover:text-bg-cyan-400"
+          >
+            Mission
+          </Link>
+        </p>
+        <button
+          type="button"
+          onClick={handleNavigate}
+          className="text-lg font-medium text-gray-800 hover:text-bg-cyan-400"
+        >
+          Vision
+        </button>
       </div>
     </div>
   );
