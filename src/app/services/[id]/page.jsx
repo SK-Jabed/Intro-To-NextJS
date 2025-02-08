@@ -73,7 +73,7 @@ export default function ServiceDetailsPage({ params }) {
   const id = params.id;
 
   const singleData = services.find((service) => service._id == id);
-  
+
   return (
     <div className="p-4 py-16 flex items-center gap-6">
       <div className="w-1/2">
@@ -84,13 +84,11 @@ export default function ServiceDetailsPage({ params }) {
         />
       </div>
       <div className="w-1/2 h-[400px] px-4 py-8 border-2 rounded-md bg-gray-100">
-        <h1 className="text-3xl font-bold mt-4">
-          {singleData.service_name}
-        </h1>
+        <h1 className="text-3xl font-bold mt-4">{singleData.service_name}</h1>
         <p className="text-sm text-gray-500 font-semibold mt-3">
           {singleData.service_description}
         </p>
-        
+
         <p className="mt-[3px] text-gray-600 font-medium">
           Availability: {singleData.availability}
         </p>
@@ -103,9 +101,7 @@ export default function ServiceDetailsPage({ params }) {
         <p className="mt-4 text-gray-600 font-medium">
           Rating: {singleData.rating}
         </p>
-        <button
-          className="btn mt-5 px-6 py-2 text-lg font-semibold text-white capitalize transition-transform transform bg-gradient-to-r from-indigo-500 via-blue-500 to-blue-600 rounded-md shadow-lg lg:w-auto hover:scale-105 focus:outline-none"
-        >
+        <button className="btn mt-5 px-6 py-2 text-lg font-semibold text-white capitalize transition-transform transform bg-gradient-to-r from-indigo-500 via-blue-500 to-blue-600 rounded-md shadow-lg lg:w-auto hover:scale-105 focus:outline-none">
           Buy This
         </button>
       </div>
