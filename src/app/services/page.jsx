@@ -74,7 +74,7 @@ const page = () => {
   return (
     <div>
       <h2 className="font-semibold text-3xl">Services page Here</h2>
-      {
+      {/* {
         services.map(service => {
             return (
                <div>
@@ -84,10 +84,35 @@ const page = () => {
                 <img src={service.service_image} alt="" />
                 </Link>
             </div> 
-            )
-            
+            )           
         })
-      }
+      } */}
+
+      {services.map((service) => (
+            <div className="p-6 bg-white rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105 h-[520px]">
+              <img
+                src={service.service_image}
+                alt={service.service_name}
+                className="w-full h-56 object-cover rounded-t-lg"
+              />
+              <h3 className="text-xl font-bold mt-4">{service.service_name}</h3>
+              <p className="text-gray-700 mt-2">{service.service_description}</p>
+              <div className="mt-4">
+                <p className="text-sm mt-2">
+                  Category: {service.category}
+                </p>
+                <p className="text-sm">
+                  : ${service.minDonation}
+                </p>
+                <button
+                  onClick={() => navigate(`/service/${service._id}`)}
+                  className="px-8 py-3 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-bold shadow-lg hover:shadow-xl hover:bg-gradient-to-l hover:from-pink-500 hover:via-purple-500 hover:to-indigo-500 transition duration-300 ease-in-out mt-2"
+                >
+                  See More
+                </button>
+              </div>
+            </div>
+        ))}
     </div>
   );
 };
