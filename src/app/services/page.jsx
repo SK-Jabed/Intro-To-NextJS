@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 
 const page = () => {
-  const services = [
+   const services = [
     {
       _id: "1",
       service_name: "Web Development",
@@ -17,7 +17,7 @@ const page = () => {
     {
       _id: "2",
       service_name: "Graphic Design",
-      service_image: "/images/Web Development.jpg",
+      service_image: "/images/Graphic Design.png",
       service_description:
         "Creating visually stunning designs for branding, social media, and marketing.",
       category: "Design",
@@ -28,7 +28,7 @@ const page = () => {
     {
       _id: "3",
       service_name: "Digital Marketing",
-      service_image: "/images/Web Development.jpg",
+      service_image: "/images/Responsive website.jpg",
       service_description:
         "Boosting online presence through SEO, social media, and paid advertising.",
       category: "Marketing",
@@ -39,7 +39,7 @@ const page = () => {
     {
       _id: "4",
       service_name: "Content Writing",
-      service_image: "/images/Web Development.jpg",
+      service_image: "/images/Graphics Design.jpg",
       service_description:
         "Providing high-quality content for blogs, websites, and marketing materials.",
       category: "Writing",
@@ -50,7 +50,7 @@ const page = () => {
     {
       _id: "5",
       service_name: "Mobile App Development",
-      service_image: "/images/Web Development.jpg",
+      service_image: "/images/Website Development.jpg",
       service_description:
         "Creating user-friendly and powerful mobile applications for iOS and Android.",
       category: "Technology",
@@ -61,7 +61,7 @@ const page = () => {
     {
       _id: "6",
       service_name: "Photography",
-      service_image: "/images/Web Development.jpg",
+      service_image: "/images/Photography.jpg",
       service_description:
         "Professional photography services for events, products, and portraits.",
       category: "Creative Arts",
