@@ -71,13 +71,6 @@ const page = () => {
     },
   ];
 
-
-
-
-
-
-  
-
   return (
     <div className="my-14">
       <h2 className="font-semibold text-3xl text-center mb-2">

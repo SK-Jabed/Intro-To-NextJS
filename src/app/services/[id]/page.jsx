@@ -101,6 +101,7 @@ export default function ServiceDetailsPage({ params }) {
         <p className="mt-4 text-gray-600 font-medium">
           Rating: {singleData.rating}
         </p>
+        
         <button className="btn mt-5 px-6 py-2 text-lg font-semibold text-white capitalize transition-transform transform bg-gradient-to-r from-indigo-500 via-blue-500 to-blue-600 rounded-md shadow-lg lg:w-auto hover:scale-105 focus:outline-none">
           Buy This
         </button>
